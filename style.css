@@ -164,46 +164,7 @@ footer p {
 
 
 
-/* mobilvisning */
 
-    .hamburger {
-      display: none;
-      font-size: 30px;
-      cursor: pointer;
-    }
-
-    .mobile-menu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: #FC63AE;
-      width: 150px;
-      padding: 20px;
-      border-bottom-left-radius: 20px; /* mykt hjørne nede venstre på menyen*/
-      z-index: 1;
-    }
-    .mobile-menu ul {
-      list-style: none;
-      padding: 0;
-      
-    }
-    .mobile-menu li {
-      margin-bottom: 10px;
-    }
-
-    .mobile-menu a {
-      
-      color: #000000;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    .mobile-menu a:hover,
-    .mobile-menu a:focus,
-    .mobile-menu a:active {
-      text-decoration: underline;
-    }
 
     /* Grunnleggende stil for galleriet */
 .gallery {
@@ -284,96 +245,141 @@ footer p {
     height: 150px;
 }
 
+/* mobilvisning */
 
-@media (max-width: 768px) {
-    margin: 0;
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
 
-    .gallery {
-        grid-template-columns: 
-        width: 100%; /* En boks per rad */
-          margin: 10px 0;
-          /*repeat(auto-fit, minmax(100px, 1fr));*/
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #FC63AE;
+  width: 150px;
+  padding: 20px;
+  border-bottom-left-radius: 20px; /* mykt hjørne nede venstre på menyen*/
+  z-index: 1;
+}
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
   
-    }
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.mobile-menu a {
   
-    .lightbox-content {
-        max-width: 90%;
-        max-height: 70%;
-    }
-  
-    #caption {
-        font-size: 14px;
-    }
-  
-    .logo img {
-    max-width: 70%;
-    height: auto;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      margin-left: 20px;
-      }
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+}
 
-    .navbar {
-      display: none;
-      
-    }
-   
-    .hamburger {
-      display: block; /* vis hamburgerikonet på mobil*/
-    }
+.mobile-menu a:hover,
+.mobile-menu a:focus,
+.mobile-menu a:active {
+  text-decoration: underline;
+}
 
-
-    .mobile-menu.show {
-      display: block; /* vis mobilmeny når den er aktivert*/
-      
-    }
-
-    #main-header {
-      height: 200px;  
-    }
-    
-
-    .om-side .showcase img,
-    .kontakt-side .showcase img {
-      display: none;
-      }
-    
-    .om-side .overlay,
-    .kontakt-side .overlay {
-      background-color: #956242;
-      height: 600px;
-    }
-    
-    .om-side .showcase,
-    .kontakt-side .showcase {
-      background-color: transparent;
-    }
-
-    #forsidebilde {
-      width: auto;
-    }  
-
-    .overlay h2 {
-      font-size: 1rem;
-    }
-
-    .overlay p {
-      font-size: 0.875rem;
-    }
-
-    .product-box {
-      width: 100%; /* En boks per rad */
-      margin: 10px 0;
+@media (max-width: 1060px) {
+  h1 {
+    font-size: 36px;
   }
-  
-    footer {
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
-    footer p {
-      font-size: 0.5rem;
-      padding: 5px;
-    }
-   }
-   
+}
+
+    @media (max-width: 768px) {
+        margin: 0;
+
+        .gallery {
+            grid-template-columns: 
+            width: 100%; /* En boks per rad */
+              margin: 10px 0;
+              /*repeat(auto-fit, minmax(100px, 1fr));*/
+      
+        }
+      
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 70%;
+        }
+      
+        #caption {
+            font-size: 14px;
+        }
+      
+        .logo img {
+        max-width: 70%;
+        height: auto;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-left: 20px;
+          }
+
+        .navbar {
+          display: none;
+          
+        }
+      
+        .hamburger {
+          display: block; /* vis hamburgerikonet på mobil*/
+        }
+
+
+        .mobile-menu.show {
+          display: block; /* vis mobilmeny når den er aktivert*/
+          
+        }
+
+        #main-header {
+          height: 200px;  
+        }
+        
+
+        .om-side .showcase img,
+        .kontakt-side .showcase img {
+          display: none;
+          }
+        
+        .om-side .overlay,
+        .kontakt-side .overlay {
+          background-color: #956242;
+          height: 600px;
+        }
+        
+        .om-side .showcase,
+        .kontakt-side .showcase {
+          background-color: transparent;
+        }
+
+        #forsidebilde {
+          width: auto;
+        }  
+
+        h1 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 16px;
+        }
+
+        .product-box {
+          width: 100%; /* En boks per rad */
+          margin: 10px 0;
+      }
+      
+        footer {
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+        footer p {
+          font-size: 0.5rem;
+          padding: 5px;
+        }
+      }
+      
 
