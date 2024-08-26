@@ -12,15 +12,17 @@ p, h1, h2, h3 {
 }
 
 p {
+  font-family: 'Quicksand', sans-serif;
   margin-top: 0;
   margin-bottom: 0;
   color: #000000;
+  
 }
 
 h1 {
     color: rgb(0, 0, 0);
     font-size: 5em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     word-wrap: break-word
     }
@@ -88,6 +90,7 @@ align-items: center;
 .navbar a {
   text-decoration: none;
   color: #33262c;
+  font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   padding: 10px;
   border-radius: 4px;
@@ -101,7 +104,7 @@ align-items: center;
   }
 
 .navbar a.active {
-    background-color: rgba(135, 178, 230, 0.5); /* Transparent lyseblå bakgrunn */
+    background-color: rgba(138, 175, 138, 0.5); /* Transparent lyseblå bakgrunn */
     color: #000000; 
   }
 
@@ -140,6 +143,8 @@ main {
 
     flex: 1; /*main tar opp all tilgjengelig plass, flytter footeren som kommer etter helt ned på siden når innholdet er mindre enn skjermen */
     padding: 20px; /*luft mellom innholdet og kanten på innholdet */
+    background-color: #FDE2EF;
+    text-align: center;
 }
 
 footer {
