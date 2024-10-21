@@ -170,7 +170,7 @@ footer p {
     /* Grunnleggende stil for galleriet */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
     padding: 20px;
     background-color: #FDE2EF;
@@ -178,8 +178,12 @@ footer p {
 
 .gallery-item {
     width: 100%;
-    height: auto;
+    height: 300px; /*låse lik størrelse på bildene*/
+    object-fit: cover; /*beholder bildets proposjoner innenfor den faste størrelsen*/
+    aspect-ratio: 1/1; /*samme bredde og høyde*/
+    border: 2px solid #000000;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
     transition: transform 0.3s ease;
 }
 
