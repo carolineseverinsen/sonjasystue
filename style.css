@@ -183,7 +183,7 @@ footer p {
     aspect-ratio: 1/1; /*samme bredde og høyde*/
     border: 2px solid #000000;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    
     transition: transform 0.3s ease;
 }
 
