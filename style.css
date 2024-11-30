@@ -264,8 +264,8 @@ footer p {
   top: 100%;
   right: 0;
   background-color: #FC63AE;
-  width: 150px;
-  padding: 20px;
+  width: 75%;
+  padding: 50px;
   border-bottom-left-radius: 20px; /* mykt hjørne nede venstre på menyen*/
   z-index: 1;
 }
